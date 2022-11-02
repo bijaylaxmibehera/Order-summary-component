@@ -33,9 +33,10 @@ body {
     position: absolute;
     background-color: white;
     max-width: 450px;
-    margin: 30px 0;
+    max-height: 581px;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0px 24px 20px var(--pale-blue);
 }
 
 .hero-img {
@@ -111,10 +112,12 @@ body {
     border-radius: 10px;
     font-size: 14px;
     font-weight: 500;
+    box-shadow: 0px 10px 13px hsl(246, 38%, 72%);
 }
 
 .proceed-btn:hover {
     cursor: pointer;
+    background-color: var(--desaturated-blue);
 }
 
 .cancel-btn {
@@ -126,7 +129,7 @@ body {
     display: block;
 }
 /*The designs is created to the mobile device width 375px*/
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 425px) {
     body {
         background-image: url("./images/pattern-background-mobile.svg");
         font-size: 14px;
@@ -139,7 +142,9 @@ body {
     h1 {
         font-size: 23px;
     }
-
+    .hero-img{
+        max-width:100%;
+    }
     div.plan-box {
         padding: 12px;
     }
