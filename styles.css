@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /*primary colors*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /*Neutral colors*/
+    --verypale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*The designs is created to the Desktop: 1440px */
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--verypale-blue);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    background-color: white;
+    max-width: 450px;
+    margin: 30px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+.content-box {
+    padding: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.content-box h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+#subtitle {
+    color: var(--desaturated-blue);
+    margin-top: 20px;
+}
+
+.plan-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--verypale-blue);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.plan-details {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan-details div {
+    padding-left: 17px;
+}
+
+.plan-details div h5 {
+    font-weight: 700;
+    color: var(--dark-blue);
+    font-size: 16px;
+}
+
+.plan-details div p {
+    color: var(--desaturated-blue);
+    font-size: 14px;
+}
+
+.change-btn a {
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.change-btn a:hover {
+    text-decoration: none;
+}
+
+.proceed-btn {
+    background-color: var(--bright-blue);
+    color: white;
+    display: block;
+    max-width: 75%;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.proceed-btn:hover {
+    cursor: pointer;
+}
+
+.cancel-btn {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 0;
+    display: block;
+}
+/*The designs is created to the mobile device width 375px*/
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 87%;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    div.plan-box {
+        padding: 12px;
+    }
+
+    .plan-details div {
+        margin-left: 10px;
+    }
+
+    a.proceed-btn,
+    a.cancel-btn,
+    .plan-box a {
+        font-size: 13px;
+    }
+
+    .content-box{
+        padding: 9% 7%;
+    }
+}
